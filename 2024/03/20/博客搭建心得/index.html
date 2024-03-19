@@ -9,7 +9,7 @@
     
     <title>
         
-            Archive: 2024/3 |
+            博客搭建心得 |
         
         斗城一绝
     </title>
@@ -90,7 +90,7 @@
                     
                         
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/archives"
                             >
                                 
@@ -158,7 +158,7 @@
             
                 
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/archives"
                     >ARCHIVES</a>
                 </li>
@@ -199,36 +199,218 @@
             <div class="main-content border-box">
                 
 
-                    <div class="fade-in-down-animation">
-    <div class="archives-container">
-        <div class="archives-timeline border-box">
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
             
-<div class="archive-list-container border-box">
-    
-        <section class="archive-item border-box">
-            <div class="archive-item-header border-box">
-                <span class="archive-year">2024</span>
-            </div>
-            <ul class="archive-item-body border-box">
+
+            <div class="post-content-bottom border-box">
                 
-                    <li class="post-item border-box">
-                        <span class="post-date border-box">03-20</span>
-                        <a class="post-title border-box text-ellipsis"
-                           href="/2024/03/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%BF%83%E5%BE%97/"
-                        >博客搭建心得</a>
-                    </li>
+                    <div class="post-title">
+                        博客搭建心得
+                    </div>
                 
-            </ul>
-        </section>
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/avatar.svg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">斗城一绝</span>
+                                
+                                    <span class="author-badge">炼气</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-03-20 00:11:35</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Wed Mar 20 2024 01:45:26 GMT+0800">2024-03-20 01:45:26</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%BF%83%E5%BE%97/">心得</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>141 Words</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
     
 </div>
 
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body">
+                    
+
+                    <ul>
+<li><a href="#1cdn">1.CDN</a></li>
+<li><a href="#2%E5%9B%BE%E5%BA%8A">2.图床</a><ul>
+<li><a href="#3github--picgo--jsdelivr">3.GitHub + PicGo + jsdelivr</a></li>
+</ul>
+</li>
+<li><a href="#hexo%E6%8C%87%E4%BB%A4">hexo指令</a></li>
+</ul>
+<h1 id="1-CDN"><a href="#1-CDN" class="headerlink" title="1.CDN"></a>1.CDN</h1><p>关于什么是cdn，相当于一个平台能有很好的访问速度，有些网站你进不去，但是通过cdn，人家先访问，然后存储下去，你在访问它存储的（只是简单回答</p>
+<h1 id="2-图床"><a href="#2-图床" class="headerlink" title="2.图床"></a>2.图床</h1><p>推荐GitHub + PicGo + jsdelivr 或者是7牛云 + PICGo</p>
+<h2 id="3-GitHub-PicGo-jsdelivr"><a href="#3-GitHub-PicGo-jsdelivr" class="headerlink" title="3.GitHub + PicGo + jsdelivr"></a>3.GitHub + PicGo + jsdelivr</h2><ul>
+<li>github创建仓库</li>
+<li>PicGo配置连接</li>
+<li>jsdelivr:将静态文件换成<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/%7Busername%7D/%7Brepository%7D@%7Bbranch%7D/%7Bpath-to-image%7D%E8%AE%BF%E9%97%AE%E5%B0%B1%E8%A1%8C" >https://cdn.jsdelivr.net/gh/{username}/{repository}@{branch}/{path-to-image}访问就行<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<p>如<code>https://cdn.jsdelivr.net/gh/bothquan/My-NotePic@main/a3b6ac671a6f.gongyi_back.png</code></p>
+<h1 id="hexo指令"><a href="#hexo指令" class="headerlink" title="hexo指令"></a>hexo指令</h1>
+                </div>
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                博客搭建心得
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                2024/03/20/博客搭建心得/
+            </div>
         </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    Author
+                </div>
+                <div class="content">斗城一绝</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    Published
+                </div>
+                <div class="content">2024-03-20 00:11</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    License
+                </div>
+                <div class="content tooltip" data-tooltip-content="">
+                    <a href="https://github.com/bothquan" target="_blank">
+                        
+                            Custom License
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
     </div>
-    
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%BF%83%E5%BE%97/">心得</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+
+                
+                    
 
 
 
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-CDN"><span class="nav-number">1.</span> <span class="nav-text">1.CDN</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%9B%BE%E5%BA%8A"><span class="nav-number">2.</span> <span class="nav-text">2.图床</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-GitHub-PicGo-jsdelivr"><span class="nav-number">2.1.</span> <span class="nav-text">3.GitHub + PicGo + jsdelivr</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo%E6%8C%87%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">hexo指令</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
 </div>
 
 
@@ -277,6 +459,28 @@
 
     <!-- post tools -->
     
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
 
     <!-- side tools -->
     <div class="side-tools">
@@ -303,6 +507,10 @@
     </ul>
 
     <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
         
 
         
@@ -360,6 +568,17 @@
 
     <!-- tablet toc -->
     
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-CDN"><span class="nav-number">1.</span> <span class="nav-text">1.CDN</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%9B%BE%E5%BA%8A"><span class="nav-number">2.</span> <span class="nav-text">2.图床</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-GitHub-PicGo-jsdelivr"><span class="nav-number">2.1.</span> <span class="nav-text">3.GitHub + PicGo + jsdelivr</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo%E6%8C%87%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">hexo指令</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
 </main>
 
 
@@ -396,6 +615,24 @@
 
 
 <div class="">
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
     
 
     <!-- categories page -->
