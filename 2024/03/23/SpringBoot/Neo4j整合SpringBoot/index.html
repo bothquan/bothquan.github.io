@@ -84,7 +84,7 @@
                                href="/"
                             >
                                 
-                                首頁
+                                HOME
                             </a>
                         </li>
                     
@@ -94,7 +94,7 @@
                                href="/archives"
                             >
                                 
-                                歸檔
+                                ARCHIVES
                             </a>
                         </li>
                     
@@ -104,7 +104,7 @@
                                href="/tags"
                             >
                                 
-                                標籤
+                                TAGS
                             </a>
                         </li>
                     
@@ -114,7 +114,7 @@
                                href="/categories"
                             >
                                 
-                                分類
+                                CATEGORIES
                             </a>
                         </li>
                     
@@ -124,7 +124,7 @@
                                href="/about"
                             >
                                 
-                                關於
+                                ABOUT
                             </a>
                         </li>
                     
@@ -153,35 +153,35 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/"
-                    >首頁</a>
+                    >HOME</a>
                 </li>
             
                 
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/archives"
-                    >歸檔</a>
+                    >ARCHIVES</a>
                 </li>
             
                 
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/tags"
-                    >標籤</a>
+                    >TAGS</a>
                 </li>
             
                 
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/categories"
-                    >分類</a>
+                    >CATEGORIES</a>
                 </li>
             
                 
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/about"
-                    >關於</a>
+                    >ABOUT</a>
                 </li>
             
         </ul>
@@ -241,7 +241,7 @@
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Sat Mar 23 2024 19:59:58 GMT+0800">2024-03-23 19:59:58</span>
+                <span class="datetime" data-updated="Sun Mar 24 2024 11:41:08 GMT+0800">2024-03-24 11:41:08</span>
             </span>
         
 
@@ -273,12 +273,12 @@
         
         
             <span class="meta-info-item post-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>292 字數</span>
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>292 Words</span>
             </span>
         
         
             <span class="meta-info-item post-min2read">
-                <i class="icon fas fa-clock"></i>&nbsp;<span>1 分鐘</span>
+                <i class="icon fas fa-clock"></i>&nbsp;<span>1 Mins</span>
             </span>
         
         
@@ -330,7 +330,6 @@
 <h2 id="创建对应关系"><a href="#创建对应关系" class="headerlink" title="创建对应关系"></a>创建对应关系</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">/</span> 先找到两个节点</span><br><span class="line"><span class="keyword">MATCH</span> (n:西游记 &#123;name: <span class="string">&#x27;唐僧&#x27;</span>&#125;), (a:西游记)</span><br><span class="line"><span class="keyword">WHERE</span> a.name <span class="operator">&lt;&gt;</span> <span class="string">&#x27;唐僧&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 再创建关系并设置关系属性</span><br><span class="line"><span class="keyword">CREATE</span> (n)<span class="operator">-</span>[r:R_Ship]<span class="operator">-</span><span class="operator">&gt;</span>(a)</span><br><span class="line"><span class="keyword">SET</span> r.name <span class="operator">=</span> <span class="string">&#x27;师徒&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">MATCH</span> (n:西游记 &#123;name: <span class="string">&#x27;唐僧&#x27;</span>&#125;), (a:西游记)</span><br><span class="line"><span class="keyword">WHERE</span> a.name <span class="operator">&lt;&gt;</span> <span class="string">&#x27;唐僧&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 再创建关系并设置关系属性</span><br><span class="line"><span class="keyword">CREATE</span> (a)<span class="operator">-</span>[r:R_Ship]<span class="operator">-</span><span class="operator">&gt;</span>(n)</span><br><span class="line"><span class="keyword">SET</span> r.name <span class="operator">=</span> <span class="string">&#x27;师傅&#x27;</span></span><br></pre></td></tr></table></figure>
 
 
-
 <p>create (n:peoper{name:’tsq’}), (n:peoper{name:’tsq1’})<br>match (n:peoper{name:’tsq’}), (b:peoper{name:’tsq1’})<br>create (n)-[r:R_Ship]-&gt;(b)<br>SET r.name&#x3D;’朋友’</p>
 <!-- 创建两个节点间的关系 -->
 <p>create (n:)</p>
@@ -353,14 +352,14 @@
         <div class="copyright-info-bottom border-box">
             <div class="copyright-post-author bottom-item">
                 <div class="type">
-                    作者
+                    Author
                 </div>
                 <div class="content">斗城一绝</div>
             </div>
 
             <div class="post-time bottom-item">
                 <div class="type">
-                    發布于
+                    Published
                 </div>
                 <div class="content">2024-03-23 17:57</div>
             </div>
@@ -368,7 +367,7 @@
 
             <div class="post-license bottom-item">
                 <div class="type">
-                    許可
+                    License
                 </div>
                 <div class="content tooltip" data-tooltip-content="">
                     <a href="https://github.com/bothquan" target="_blank">
@@ -382,7 +381,7 @@
 
         <i class="copyright-bg fa-solid fa-copyright"></i>
     </div>
-    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="復製版權信息" data-tooltip-offset-y="-2px">
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
         <i class="fa-solid fa-copy"></i>
     </div>
 </div>
@@ -420,7 +419,7 @@
                                 >
                                     <span class="title flex-center">
                                         <span class="post-nav-title-item text-ellipsis">Springboot+vue实现邮箱链接改密</span>
-                                        <span class="post-nav-item">下一篇</span>
+                                        <span class="post-nav-item">Next posts</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
                                         <i class="fas fa-chevron-right"></i>
@@ -474,7 +473,7 @@
             </div>
 
             <!-- <div class="theme-info info-item default">
-                <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;框架&nbsp;&&nbsp;主題&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
             </div> -->
 
             
@@ -487,7 +486,7 @@
 
             
                 <span class="count-box border-box uv">
-                    <span class="item-type border-box">讀者</span>
+                    <span class="item-type border-box">Unique Visitor</span>
                     <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
                 </span>
             
@@ -589,7 +588,7 @@
                 <input autocomplete="off"
                        autocorrect="off"
                        autocapitalize="off"
-                       placeholder="搜尋..."
+                       placeholder="Search..."
                        spellcheck="false"
                        type="search"
                        class="search-input"
